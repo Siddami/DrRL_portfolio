@@ -1,6 +1,6 @@
 import {BiHomeAlt, BiUser} from 'react-icons/bi'
 import {BsClipboardData, BsBriefcase, BsChatSquareText} from 'react-icons/bs'
-import {Link} from 'react-scroll'
+import { Link as ScrollLink } from 'react-scroll'
 
 function Navbar(){
     return(
@@ -8,41 +8,42 @@ function Navbar(){
             <div className="container max-auto">
                 {/* Inner nav */}
                 <div className='w-full bg-black/20 h-[96px] backdrop-blur-2xl rounded-full max-w-[460px] mx-auto px-5 flex justify-between text-2xl items-center text-white/50'>
-                    <Link to='home'
+                    <ScrollLink to='home'
                           activeClass='active'
                           smooth={true}
                           spy={true}
+                          offset={-200}
                           className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center '>
                         <BiHomeAlt/>
-                    </Link>
-                    <Link to='about'
+                    </ScrollLink>
+                    <ScrollLink to='about'
                           activeClass='active'
                           smooth={true}
                           spy={true}
                           className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center '>
                         <BiUser/>
-                    </Link>
-                    <Link to='services'
+                    </ScrollLink>
+                    <ScrollLink to='services'
                           activeClass='active'
                           smooth={true}
                           spy={true}
                           className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center '>
                         <BsClipboardData/>
-                    </Link>
-                    <Link to='work'
+                    </ScrollLink>
+                    <ScrollLink to='work'
                           activeClass='active'
                           smooth={true}
                           spy={true}
                           className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center '>
                         <BsBriefcase/>
-                    </Link>
-                    <Link to='contact'
+                    </ScrollLink>
+                    <ScrollLink to='contact'
                           activeClass='active'
                           smooth={true}
                           spy={true}
                           className='cursor-pointer w-[60px] h-[60px] flex items-center justify-center '>
                         <BsChatSquareText/>
-                    </Link>
+                    </ScrollLink>
                 </div>
             </div>
         </nav>
