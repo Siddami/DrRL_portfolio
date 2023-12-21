@@ -1,6 +1,6 @@
 import Header from "./components/Header"
 import Banner from "./components/Banner"
-import NavBar from "./components/Navbar"
+import NavBar from "./components/NavBar"
 import About from "./components/About"
 import Services from "./components/Services"
 import Work from "./components/Work"
