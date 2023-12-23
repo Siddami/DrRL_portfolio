@@ -9,7 +9,7 @@ function Banner(){
     return(
         <section className="min-h-[85vh] lg:min-h-[78vh] flex items-center" id="home">
             <div className="container mx-auto">
-                <div className="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-12">
+                <div className="flex flex-col gap-y-8 lg:flex-row lg:items-center lg:gap-x-20">
                     {/* text */}
                     <div className="flex-1 text-center font-secondary lg:text-left">
                         <motion.h1
@@ -17,7 +17,7 @@ function Banner(){
                             initial="hidden"
                             whileInView={'show'}
                             viewport={{once:false, amount:0.7}}
-                            className="text-[55px] font-bold leading-[0.8] lg:text-[110px]">
+                            className="text-[55px] font-bold leading-[0.8]">
                             DR. RL <span>ABDULKAREEM</span>
                         </motion.h1>
                         <motion.div
@@ -25,16 +25,14 @@ function Banner(){
                             initial="hidden"
                             whileInView={'show'}
                             viewport={{once:false, amount:0.7}}
-                            className='mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1]'>
-                            <span className='text-white mr-4'>I am </span>
+                            className='mb-5 text-[36px] font-secondary font-semibold uppercase leading-[1]'>
+                            <span className='text-white mr-4'>I am a</span>
                             <TypeAnimation sequence={[
-                                'an Academia',
+                                'Researcher',
                                 2000,
-                                'a Researcher',
+                                'Lecturer',
                                 2000,
-                                'a Lecturer',
-                                2000,
-                                'a Dr. of Philosophy',
+                                'Dr. of Philosophy',
                                 2000
                             ]}
                             speed={50}
@@ -64,7 +62,7 @@ function Banner(){
                             initial="hidden"
                             whileInView={'show'}
                             viewport={{once:false, amount:0.7}}
-                            className="flex text-[20px] gap-x-6 max-w-max mx-auto lg:mx-0 ">
+                            className="flex text-[30px] gap-x-6 max-w-max mx-auto lg:mx-0 ">
                             <a href="#">
                                 <FaYoutube />
                             </a>
@@ -81,7 +79,7 @@ function Banner(){
                             variants={fadeIn('down', 0.5)}
                             initial="hidden"
                             whileInView={'show'}
-                            viewport={{once:false, amount:0.7}} className="hidden lg:flex flex-1 max-w-[320px] lg:max-w-[482px]">
+                            viewport={{once:false, amount:0.7}} className="hidden lg:flex flex-1 max-w-[420px]">
                        <img src="/images/drRL.png" alt="Dr RL holding a microphone" />
                     </motion.div>
                 </div>
