@@ -12,7 +12,7 @@ function About(){
             <div className="container mx-auto">
                 <div>
                     {/* img */}
-                    <div className="flex-1 bg-about bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top">
+                    <div className="flex-1 bg-contain bg-no-repeat h-[640px] mix-blend-lighten bg-top">
 
                     </div>
                     {/* text */}
