@@ -1,13 +1,13 @@
 function Header(){
     return(
-        <header className="max-h-28">
+        <header className="max-h-20 py-6">
             <div className="container mx-auto">
-                <div className="flex justify-between items-center h-[120px]">
+                <div className="flex justify-between items-center">
                     {/* logo */}
                     <a href="#">
-                        <img src="/images/logo.svg"
-                             alt="Dr RL"
-                             className="items-center justify-center h-[30vh]" />
+                        <h2 className="text-4xl font-semibold">
+                            <span className=" text-pink-300">DR.</span><span className=" text-indigo-900"> RL</span>
+                        </h2>
                     </a>
 
                     {/* button */}
