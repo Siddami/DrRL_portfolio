@@ -8,7 +8,7 @@ import { fadeIn } from "../variants";
 function Banner() {
   return (
     <section
-      className="min-h-[85vh] lg:min-h-[78vh] flex items-center overflow-hidden"
+      className="min-h-[85vh] lg:min-h-[78vh] flex items-center overflow-hidden w-auto"
       id="home"
     >
       <div className="container mx-auto">
@@ -28,7 +28,7 @@ function Banner() {
                 once: false,
                 amount: 0.7,
               }}
-              className="text-[55px] font-bold leading-[0.8]"
+              className="text-[2.5rem] lg:text-[3.5rem] font-bold leading-[0.8] mb-1"
             >
               DR.
               RL{" "}
@@ -49,7 +49,7 @@ function Banner() {
                 once: false,
                 amount: 0.7,
               }}
-              className="mb-5 text-[36px] font-secondary font-semibold uppercase leading-[1]"
+              className="mb-5 text-[1.5rem] lg:text-[2rem] font-secondary font-semibold uppercase leading-[1]"
             >
               <span className="text-white mr-4">
                 I
