@@ -22,11 +22,39 @@ function About() {
       }
     >
       <div className="container mx-auto">
-        <div>
+        <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen">
           {/* img */}
-          <div className="flex-1 bg-contain bg-no-repeat mix-blend-lighten bg-top"></div>
+          <motion.div
+            variants={fadeIn(
+              "right",
+              0.3
+            )}
+            initial="hidden"
+            whileInView={
+              "show"
+            }
+            viewport={{
+              once: false,
+              amount: 0.3,
+            }}
+            className="flex-1 bg-about bg-contain bg-no-repeat mix-blend-lighten bg-top lg:h-[540px] h-[640px]"
+          ></motion.div>
           {/* text */}
-          <div className="flex-1">
+          <motion.div
+            variants={fadeIn(
+              "left",
+              0.5
+            )}
+            initial="hidden"
+            whileInView={
+              "show"
+            }
+            viewport={{
+              once: false,
+              amount: 0.3,
+            }}
+            className="flex-1"
+          >
             <h2 className="h2 text-accent">
               About
               Me
@@ -48,7 +76,7 @@ function About() {
               of
               experience
             </h3>
-            <p className="mb-6">
+            <p className=" mb-6">
               With
               over
               a
@@ -100,7 +128,7 @@ function About() {
               management.
             </p>
             {/* stats */}
-            <div className="flex gap-x-6">
+            <div className="flex gap-x-6 mb-6">
               <div>
                 <div className="text-[40px] font-tertiary text-gradient mb-2">
                   {inView ? (
@@ -165,7 +193,7 @@ function About() {
                 Portfolio
               </a>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
