@@ -37,7 +37,7 @@ function Services() {
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row">
           {/* text & image */}
-          <div className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten lg:bg-contain mb-12 lg:mb-0">
+          <div className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0">
             <h2 className="h2 text-accent mb-6">
               What
               I
@@ -89,11 +89,17 @@ function Services() {
                         index
                       }
                     >
-                      <div>
-                        <h4>
-                          Service
-                          name
+                      <div className="max-w-[476px]">
+                        <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-6">
+                          {
+                            name
+                          }
                         </h4>
+                        <p className="font-secondary leading-tight">
+                          {
+                            description
+                          }
+                        </p>
                       </div>
                       <div>
                         links
