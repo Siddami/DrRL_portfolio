@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 //variants
 import { fadeIn } from "../variants";
 //img
-import img1 from "./images/portfolio-img1.jpg";
-import img2 from "./images/portfolio-img2.png";
-import img3 from "./images/portfolio-img3.jpg";
+import img1 from "/images/portfolio-img1.jpg";
+import img2 from "/images/portfolio-img2.png";
+import img3 from "/images/portfolio-img3.jpg";
 
 const Work =
   () => {
@@ -14,7 +14,78 @@ const Work =
         className="section"
         id="work"
       >
-        Work
+        <div className="container mx-auto">
+          <div>
+            <div className="flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0">
+              {/* text */}
+              <div>
+                <h2 className="h2 leading-tight text-accent">
+                  My
+                  Latest{" "}
+                  <br />
+                  Work.
+                </h2>
+                <p className="max-w-sm mb-16">
+                  Lorem
+                  ipsum
+                  dolor
+                  sit
+                  amet,
+                  consectetur
+                  adipisicing
+                  elit.
+                  Eos
+                  consequuntur
+                  suscipit
+                  quo
+                  quos
+                  nihil
+                  porro
+                  amet.
+                  Vero
+                  accusantium
+                  dolor
+                  mollitia.
+                </p>
+                <button className="btn btn-sm">
+                  View
+                  all
+                  projects
+                </button>
+              </div>
+
+              {/* image */}
+              <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl lg:w-3/5 mx-auto">
+                {/* overlay */}
+                <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
+                {/* img */}
+                <img
+                  className="group-hover:scale-125 transition-all duration-500 mx-auto"
+                  src={
+                    img1
+                  }
+                  alt=""
+                />
+                {/* pretitle */}
+                <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-50">
+                  <span className="text-gradient">
+                    RESEARCH
+                  </span>
+                </div>
+                {/* title */}
+                <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
+                  <span>
+                    Project
+                    Title
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div>
+            2
+          </div>
+        </div>
       </section>
     );
   };
