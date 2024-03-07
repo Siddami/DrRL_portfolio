@@ -11,19 +11,19 @@ const services =
     {
       name: "Research",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate cupiditate at quidem obcaecati dignissimos cum harum blanditiis deserunt nihil rem, velit, suscipit similique perspiciatis illo dolorum aperiam molestiae, tempora repellendus?",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate cupiditate at quidem obcaecati dignissimos.",
       link: "Learn-more",
     },
     {
       name: "Human Resource Management",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate cupiditate at quidem obcaecati dignissimos cum harum blanditiis deserunt nihil rem, velit, suscipit similique perspiciatis illo dolorum aperiam molestiae, tempora repellendus?",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate cupiditate at quidem obcaecati dignissimos.",
       link: "Learn-more",
     },
     {
       name: "Lecturing",
       description:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate cupiditate at quidem obcaecati dignissimos cum harum blanditiis deserunt nihil rem, velit, suscipit similique perspiciatis illo dolorum aperiam molestiae, tempora repellendus?",
+        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate cupiditate at quidem obcaecati dignissimos.",
       link: "Learn-more",
     },
   ];
@@ -35,9 +35,9 @@ function Services() {
       id="services"
     >
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col lg:flex-row lg:gap-6">
           {/* text & image */}
-          <div className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0">
+          <motion.div className="flex-1 lg:bg-services lg:bg-contain lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0">
             <h2 className="h2 text-accent mb-6">
               What
               I
@@ -65,7 +65,7 @@ function Services() {
               my
               work
             </button>
-          </div>
+          </motion.div>
 
           {/* services  */}
           <div className="flex-1">
@@ -85,6 +85,7 @@ function Services() {
                     service;
                   return (
                     <div
+                      className="border-b border-white/20 h-[146px] mb-[38px] flex"
                       key={
                         index
                       }
@@ -101,8 +102,21 @@ function Services() {
                           }
                         </p>
                       </div>
-                      <div>
-                        links
+                      <div className="flex flex-col flex-1 items-end">
+                        <a
+                          href="#"
+                          className="btn w-9 h-9 mb-[42px] flex justify-center items-center"
+                        >
+                          <BsArrowUpRight />
+                        </a>
+                        <a
+                          href="#"
+                          className="text-gradient text-sm "
+                        >
+                          {
+                            link
+                          }
+                        </a>
                       </div>
                     </div>
                   );
