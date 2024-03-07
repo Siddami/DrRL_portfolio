@@ -35,9 +35,23 @@ function Services() {
       id="services"
     >
       <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row lg:gap-6">
+        <div className="flex flex-col lg:flex-row">
           {/* text & image */}
-          <motion.div className="flex-1 lg:bg-services lg:bg-contain lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0">
+          <motion.div
+            variants={fadeIn(
+              "right",
+              0.3
+            )}
+            initial="hidden"
+            whileInView={
+              "show"
+            }
+            viewport={{
+              once: false,
+              amount: 0.3,
+            }}
+            className="flex-1 lg:bg-services lg:bg-contain lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0"
+          >
             <h2 className="h2 text-accent mb-6">
               What
               I
@@ -68,7 +82,21 @@ function Services() {
           </motion.div>
 
           {/* services  */}
-          <div className="flex-1">
+          <motion.div
+            variants={fadeIn(
+              "left",
+              0.5
+            )}
+            initial="hidden"
+            whileInView={
+              "show"
+            }
+            viewport={{
+              once: false,
+              amount: 0.3,
+            }}
+            className="flex-1"
+          >
             {/* services list */}
             <div>
               {services.map(
@@ -123,7 +151,7 @@ function Services() {
                 }
               )}
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>
