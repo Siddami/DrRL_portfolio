@@ -16,7 +16,21 @@ const Work =
       >
         <div className="container mx-auto">
           <div className="flex flex-col lg:flex-row gap-x-10">
-            <div className="flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0">
+            <motion.div
+              variants={fadeIn(
+                "right",
+                0.3
+              )}
+              initial="hidden"
+              whileInView={
+                "show"
+              }
+              viewport={{
+                once: false,
+                amount: 0.3,
+              }}
+              className="flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0"
+            >
               {/* text */}
               <div>
                 <h2 className="h2 leading-tight text-accent">
@@ -55,14 +69,14 @@ const Work =
               </div>
 
               {/* image */}
-              <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+              <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl lg:w-4/5">
                 {/* overlay */}
                 <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
                 {/* img */}
                 <img
-                  className="group-hover:scale-125 transition-all duration-500 mx-auto"
+                  className="group-hover:scale-125 transition-all duration-500 w-full mx-auto"
                   src={
-                    img1
+                    img2
                   }
                   alt=""
                 />
@@ -80,15 +94,29 @@ const Work =
                   </span>
                 </div>
               </div>
-            </div>
-            <div className="flex-1 flex flex-col gap-y-10">
+            </motion.div>
+            <motion.div
+              variants={fadeIn(
+                "left",
+                0.2
+              )}
+              initial="hidden"
+              whileInView={
+                "show"
+              }
+              viewport={{
+                once: false,
+                amount: 0.3,
+              }}
+              className="flex-1 flex flex-col gap-y-14"
+            >
               {/* image */}
-              <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+              <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl lg:w-4/5">
                 {/* overlay */}
                 <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
                 {/* img */}
                 <img
-                  className="group-hover:scale-125 transition-all duration-500 mx-auto"
+                  className="group-hover:scale-125 transition-all duration-500 w-full mx-auto"
                   src={
                     img1
                   }
@@ -110,14 +138,14 @@ const Work =
               </div>
 
               {/* image */}
-              <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl">
+              <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl lg:w-4/5">
                 {/* overlay */}
                 <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300"></div>
                 {/* img */}
                 <img
-                  className="group-hover:scale-125 transition-all duration-500 mx-auto"
+                  className="group-hover:scale-125 transition-all duration-500 w-full mx-auto"
                   src={
-                    img1
+                    img3
                   }
                   alt=""
                 />
@@ -135,7 +163,7 @@ const Work =
                   </span>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
