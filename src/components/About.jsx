@@ -15,14 +15,14 @@ function About() {
     );
   return (
     <section
-      className="section min-h-[85vh] lg:min-h-[78vh]"
+      className="section min-h-[85vh] lg:min-h-[78vh] text-gray-900"
       id="about"
       ref={
         ref
       }
     >
       <div className="container mx-auto">
-        <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen">
+        <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen text-purple-900">
           {/* img */}
           <motion.div
             variants={fadeIn(

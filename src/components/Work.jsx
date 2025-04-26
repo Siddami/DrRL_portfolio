@@ -14,7 +14,7 @@ const Work =
         className="section"
         id="work"
       >
-        <div className="container mx-auto">
+        <div className="container mx-auto text-purple-900">
           <div className="flex flex-col lg:flex-row gap-x-10">
             <motion.div
               variants={fadeIn(
@@ -131,8 +131,7 @@ const Work =
                 {/* title */}
                 <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50">
                   <span className="text-3xl text-white">
-                    Project
-                    Title
+                    Project Title
                   </span>
                 </div>
               </div>

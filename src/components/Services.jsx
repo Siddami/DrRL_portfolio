@@ -34,7 +34,7 @@ function Services() {
       className="section"
       id="services"
     >
-      <div className="container mx-auto">
+      <div className="container mx-auto text-purple-900">
         <div className="flex flex-col lg:flex-row">
           {/* text & image */}
           <motion.div
@@ -58,7 +58,7 @@ function Services() {
               Do:
             </h2>
             <h3 className="h3 max-w-[455px] mb-16">
-              I
+              I 
               am
               a
               Doctor
@@ -98,7 +98,7 @@ function Services() {
             className="flex-1"
           >
             {/* services list */}
-            <div>
+            <div className="max-w-[95%] mx-auto">
               {services.map(
                 (
                   service,
@@ -113,37 +113,31 @@ function Services() {
                     service;
                   return (
                     <div
-                      className="border-b border-white/20 h-[146px] mb-[38px] flex"
+                      className="border-b border-white/20 h-[146px] mb-[38px] flex space-x-4"
                       key={
                         index
                       }
                     >
                       <div className="max-w-[476px]">
                         <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-6">
-                          {
-                            name
-                          }
+                          {name}
                         </h4>
                         <p className="font-secondary leading-tight">
-                          {
-                            description
-                          }
+                          {description}
                         </p>
                       </div>
                       <div className="flex flex-col flex-1 items-end">
                         <a
                           href="#"
-                          className="btn w-9 h-9 mb-[42px] flex justify-center items-center"
+                          className="btn w-6 h-6 mb-[42px] flex justify-center items-center"
                         >
                           <BsArrowUpRight />
                         </a>
                         <a
                           href="#"
-                          className="text-gradient text-sm "
+                          className="text-gradient text-xs "
                         >
-                          {
-                            link
-                          }
+                          {link}
                         </a>
                       </div>
                     </div>
