@@ -7,7 +7,7 @@ function Navbar(){
         <nav className='fixed bottom-2 lg:bottom-8 w-full overflow-hidden z-50'>
             <div className="container max-auto">
                 {/* Inner nav */}
-                <div className='w-full bg-black/20 h-[96px] backdrop-blur-2xl rounded-full max-w-[460px] mx-auto px-5 flex justify-between text-2xl items-center text-accent'>
+                <div className='w-full bg-black/20 h-[96px] backdrop-blur-2xl rounded-full max-w-[460px] mx-auto px-5 flex justify-between text-2xl items-center text-purple-900'>
                     <ScrollLink to='home'
                           activeClass='active'
                           smooth={true}
